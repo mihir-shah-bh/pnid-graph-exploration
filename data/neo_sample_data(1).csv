@@ -1,0 +1,31 @@
+Inst_id,instrument_category,text_id,associated_text,connection_link_category,connected_instruments
+valve_1,Valve,[],[],pipe,['Indicator']
+indicator_1,Indicator,"[text_1, text2]","['STAT', '45231']",,"['DCS', 'DCS', 'DCS']"
+indicator_2,Indicator,"[text_3, text_4]","['ABJ_2530', 'ABJ_2530']",pipe,"['Valve', 'Indicator', 'Valve']"
+dcs_1,DCS,[],[],software,"['DCS', 'DCS', 'Valve']"
+valve_2,Valve,[text_5],['BCP'],software,"['DCS', 'Process']"
+dcs_2,DCS,,"['I', 'H']",electric,"['Valve', 'Process']"
+process_1,Process,,['I'],pipe,"['Valve', 'Process', 'Valve']"
+,DCS,,['1/2'],software,"['Process', 'DCS']"
+,Indicator,,['STAT'],,"['Valve', 'Indicator', 'Process']"
+,Indicator,,[],software,"['Process', 'Indicator']"
+,Indicator,,"['STAT', 'BCPL']",,[]
+,Indicator,,['ABJ_2530'],pipe,"['Valve', 'DCS', 'Process']"
+,Valve,,[],software,"['Indicator', 'Valve', 'DCS']"
+process_2,Process,,"['ABJ_2530', '12000']",electric,['Process']
+,DCS,,"['H', 'M2500E4']",software,['Valve']
+,Indicator,,['1/2'],electric,"['Indicator', 'Indicator']"
+,DCS,,"['IC', '1/2']",electric,"['DCS', 'Indicator']"
+,Process,,"['12000', 'BCPL']",software,"['Valve', 'Indicator', 'DCS']"
+,Process,,"['STAT', '45231']",pipe,['Process']
+,Valve,,"['BCPL', 'BCPL']",pipe,[]
+,Process,,['STAT'],pipe,"['Valve', 'Process']"
+,DCS,,[],software,"['Valve', 'Valve']"
+,Indicator,,['IC'],pipe,['Indicator']
+,Valve,,"['BCPL', 'STAT']",,['Valve']
+,DCS,,"['STAT', 'ABJ_2530']",electric,[]
+,DCS,,['ABJ_2530'],software,"['Indicator', 'DCS']"
+,Valve,,[],,"['Valve', 'Indicator', 'DCS']"
+,Valve,,[],,"['Valve', 'Valve']"
+,Indicator,,[],,['Valve']
+,Valve,,"['56218', '12000']",electric,"['Indicator', 'Valve', 'DCS']"
